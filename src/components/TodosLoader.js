@@ -8,21 +8,9 @@ export default function TodosLoader({
 }) {
   const [newTodo, setNewTodo] = useState("");
   let count = todos.length + 1;
-  const handleInputChange = (e) => {
-    setNewTodo(e.target.value);
-  };
 
-  const handleAddButtonClick = () => {
-    if (newTodo.trim() !== "") {
-      const randomtodo = {
-        content: newTodo,
-        todoid: `randomid${count++}`,
-        isDone: false,
-      };
-      handleAddTodo && handleAddTodo(randomtodo);
-      setNewTodo("");
-    }
-  };
+
+
 
   return (
     <div className="todos-container">

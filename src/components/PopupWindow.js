@@ -12,7 +12,8 @@ export default function PopupWindow({
   notecount,
   isOpn,
 }) {
-  const { user } = useUser();
+  let storedUser = localStorage.getItem("user");
+  let user = storedUser ? JSON.parse(storedUser) : null;
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [isOpen, setIsOpen] = useState(isOpn);

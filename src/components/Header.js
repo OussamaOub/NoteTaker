@@ -12,7 +12,7 @@ export default function Header() {
     logout();
     localStorage.clear();
     console.clear();
-    navigate("/", { replace: true });
+    navigate("/NoteTaker", { replace: true });
   };
   return (
     <div className="header">
