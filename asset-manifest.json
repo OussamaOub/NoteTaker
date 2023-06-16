@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/NoteTaker/static/css/main.2b801e6c.css",
-    "main.js": "/NoteTaker/static/js/main.fddf4de1.js",
+    "main.css": "/NoteTaker/static/css/main.ac85cfda.css",
+    "main.js": "/NoteTaker/static/js/main.2246a648.js",
     "static/media/google-logo.png": "/NoteTaker/static/media/google-logo.b31361249fb7518952ee.png",
     "static/media/avatar-default2.svg": "/NoteTaker/static/media/avatar-default2.9c2e363b878321e81c1696dc3b7986e3.svg",
     "static/media/logout.svg": "/NoteTaker/static/media/logout.88104fa3e43d78f43e4b61b91b678e76.svg",
     "index.html": "/NoteTaker/index.html",
     "static/media/plus.svg": "/NoteTaker/static/media/plus.98b78bdf15ae67c5f3566692d063a143.svg",
-    "main.2b801e6c.css.map": "/NoteTaker/static/css/main.2b801e6c.css.map",
-    "main.fddf4de1.js.map": "/NoteTaker/static/js/main.fddf4de1.js.map"
+    "main.ac85cfda.css.map": "/NoteTaker/static/css/main.ac85cfda.css.map",
+    "main.2246a648.js.map": "/NoteTaker/static/js/main.2246a648.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b801e6c.css",
-    "static/js/main.fddf4de1.js"
+    "static/css/main.ac85cfda.css",
+    "static/js/main.2246a648.js"
   ]
 }
