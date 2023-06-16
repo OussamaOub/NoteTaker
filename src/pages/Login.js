@@ -29,14 +29,12 @@ export default function Login() {
           let errorcode =
             temp && temp.length > 1 ? temp[1].replace(/\)\./g, " ") : "";
           errorcode = errorcode.replace(/-/g, " ");
-          // capitalize first letter
           errorcode = errorcode.charAt(0).toUpperCase() + errorcode.slice(1);
           Swal.fire({
             icon: "error",
             title: "Oops...",
             text: errorcode,
             confirmButtonText: "OK",
-            // change button styling
             showConfirmButton: false,
             showCloseButton: true,
             color: "#fff",
@@ -61,23 +59,19 @@ export default function Login() {
       localStorage.setItem("tokenExpiration", tokenExpiration);
       navigate("/Welcome", { replace: true });
     }
-    // if user is a string, then it is an error
     else {
       const temp = user.split("/");
       let errorcode = temp[1].replace(/\)\./g, " ");
       errorcode = errorcode.replace(/-/g, " ");
-      // capitalize first letter
       errorcode = errorcode.charAt(0).toUpperCase() + errorcode.slice(1);
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: errorcode,
         confirmButtonText: "OK",
-        // change button styling
         showConfirmButton: false,
         showCloseButton: true,
         color: "#fff",
-        // change background color to linear gradient of body
         background: `linear-gradient( #0f0c29, #302b63, #24243e)`,
       });
       setLoading(false);
@@ -109,10 +103,6 @@ export default function Login() {
   return (
     <div
       className="main"
-      // style={{
-      // width depends on the screen size
-      // width: window.innerWidth > 700 ? "40vw" : "80vw",
-      // }}
     >
       {loading === false ? (
         <>
@@ -163,12 +153,6 @@ export default function Login() {
                     handleloginwithgoogle();
                   }}
                 ></div>
-                {/* <div
-                  className="discord"
-                  onClick={(e) => {
-                    handleloginwithdiscord();
-                  }}
-                ></div> */}
               </div>
             </form>
           </div>
@@ -213,7 +197,6 @@ export default function Login() {
                     margin: 0,
                     padding: 0,
                     position: "absolute",
-                    // top: 0,
                     left: "50%",
                     transform: "translate(-50%, -130%)",
                   }}
