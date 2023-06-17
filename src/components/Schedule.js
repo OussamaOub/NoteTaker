@@ -10,7 +10,6 @@ export default function Schedule() {
         value={value}
         className="calendar"
         calendarType="ISO 8601"
-        // mark current date
       />
     </div>
   );

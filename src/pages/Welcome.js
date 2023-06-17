@@ -45,11 +45,11 @@ export default function Welcome() {
       if (token && tokenExpiration) {
         const currentTime = new Date().getTime();
         if (currentTime > Number(tokenExpiration)) {
-          // Token has expired
+          
           navigate("/", { replace: true });
         }
       } else {
-        // Token or expiration not found
+        
         navigate("/", { replace: true });
       }
     };
@@ -72,7 +72,7 @@ export default function Welcome() {
 
     const fetchData = async () => {
       if (user) {
-        checkTokenExpiration(); // Check token expiration before fetching data
+        checkTokenExpiration(); 
         await Promise.all([fetchNotes(), fetchTodos()]);
       } else {
         navigate("/", { replace: true });
@@ -151,9 +151,9 @@ export default function Welcome() {
         <div></div>
         <div></div>
       </div>
-    ); // or any loading state or component
+    ); 
   }
-  // console.log("NotesCount:", noteCount, "Todocount:", todocount);
+  
 
   return (
     <>
@@ -251,7 +251,7 @@ export default function Welcome() {
               note={selectedNote}
               handleNoteEdited={handleNoteEdited}
               isOpn={isNoteEditorOpen}
-              onClose={() => setIsNoteEditorOpen(false)} // Pass setIsNoteEditorOpen as onClose prop
+              onClose={() => setIsNoteEditorOpen(false)} 
             />
           ) : null}
         </div>

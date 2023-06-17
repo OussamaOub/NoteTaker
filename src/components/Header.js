@@ -17,8 +17,6 @@ export default function Header() {
   return (
     <div className="header">
       <Logoutsvg className="logout" onClick={handleLogout} />
-      {/* show three lines fore menu */}
-      {/* <Menu className="menu" /> */}
       <p>Welcome {user.displayName}</p>
       {user.photoURL ? (
         <img src={user.photoURL} className="profilepic" />

@@ -11,9 +11,7 @@ body {
 .main {
   height: 500px;
   overflow: hidden;
-  width: 40vw;
-  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38");
-  /* no-repeat center/ cover; */
+  width: 40vw; 
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
   transition: 0.5s ease-in-out;
@@ -72,12 +70,12 @@ input:not(:focus)::placeholder {
   transition: 0.5s ease all;
 }
 button {
-  /* width: 60%; */
+ 
   height: 40px;
   margin: 10px auto;
   justify-content: center;
-  /* display: block; */
-  /* transform: translateX(32.5%); */
+ 
+ 
   align-items: center;
   color: #000;
   text-align: center;
@@ -235,9 +233,9 @@ button:hover {
   height: 50px;
   transition: all 0.2s ease-in-out;
   color: #fff;
-  /* set svg brightness */
+ 
   fill: #fff;
-  /* change brightness */
+ 
   z-index: 1000;
   filter: brightness(0.8);
 }
@@ -246,7 +244,7 @@ button:hover {
   box-shadow: 0 0 10px rgb(179, 0, 255);
   color: white;
   fill: white;
-  /* change brightness */
+ 
   filter: brightness(0.9);
 }
 
@@ -337,23 +335,11 @@ button:hover {
   background-color: #fff;
   color: #6200ff;
   fill: #6200ff;
-  /* dhadow */
+ 
   box-shadow: 0 0 10px rgb(179, 0, 255);
 }
 
-/* .todocontainer {
-  width: 30vw;
-  height: 40vh;
-  border: 1px solid #fff200;
-  border-radius: 5px;
-  position: absolute;
-  top: inherit;
-  left: 2%;
-  overflow-y: scroll;
-  background-color: rgba(3, 12, 113, 0.8);
-  color: #fff;
-  border-radius: 25px;
-} */
+
 
 .notes-container {
   display: flex;
@@ -364,7 +350,7 @@ button:hover {
   gap: 20px;
   width: 100%;
   margin: 30px 0 30px 0px;
-  /* overflow-y: scroll; */
+ 
 }
 
 ::-webkit-scrollbar {
@@ -378,8 +364,8 @@ button:hover {
 }
 
 .note-card {
-  /* display: flex; */
-  /* flex-direction: row; */
+ 
+ 
   position: relative;
   background-color: #000000;
   border: 1px solid #ccc;
@@ -502,8 +488,8 @@ button:hover {
   width: 60vw;
   height: 80vh;
   display: flex;
-  /* margin: 10px; */
-  /* margin-top: 11vh; */
+ 
+ 
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -513,36 +499,9 @@ button:hover {
   background-color: darkblue;
 }
 
-/* .calendarcontainer {
-  width: 30vw;
-  height: 40vh;
-  border: 1px solid #fff200;
-  border-radius: 5px;
-  position: absolute;
-  top: inherit;
-  left: 2%;
-  bottom: 2%;
-  overflow-y: scroll;
-  background-color: rgba(3, 12, 113, 0.8);
-  color: #fff;
-  border-radius: 5px;
-} */
 
-/* .todocontainer {
-  width: 30vw;
-  height: 40vh;
-  border: 1px solid #fff200;
-  border-radius: 5px;
-  position: absolute;
-  top: inherit;
-  left: 2%;
-  background-color: rgba(3, 12, 113, 0.8);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  flex-direction: column;
-} */
+
+
 
 .todoheader {
   display: flex;
@@ -575,7 +534,7 @@ button:hover {
 .todos-content {
   flex-grow: 1;
   overflow-y: scroll;
-  /* padding: 10px; */
+ 
 }
 
 .fas {
@@ -610,13 +569,13 @@ button:hover {
   margin: 0 10px 0 0;
   width: 20px;
 
-  /* bring checkbox to the left */
+ 
   order: -1;
-  /* remove default checkbox */
+ 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* add custom checkbox */
+ 
   border: 2px solid #000000;
   border-radius: 4px;
   cursor: pointer;
@@ -632,7 +591,7 @@ button:hover {
 }
 
 .todo-input {
-  /* Existing styles */
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -644,59 +603,19 @@ button:hover {
 }
 
 .todo-input input[type="text"] {
-  /* Existing styles */
+ 
   flex-grow: 1;
   margin-right: 10px;
 }
 
-/* #swal-input1 {
-  border-radius: 25px;
-  position: absolute;
-  top: 10%;
-  left: 40%;
-  width: 50%;
-  transform: translate(-40%, -10%);
-  border: 1px solid #000000;
-  align-self: center;
-  background-color: #ffffff;
-  color: #000000;
-}
 
-#swal-input1:focus {
-  left: 20%;
-  transform: translate(-20%, -10%);
-  width: 90%;
-}
-
-#swal-input2 {
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  width: 50%;
-  transform: translate(-40%, -50%);
-  border: 1px solid #000000;
-  align-self: center;
-  background-color: #ffffff;
-  color: #000000;
-  transition: all 0.2s ease-in-out;
-}
-
-#swal-input2:focus {
-  transition: all 0.2s ease-in-out;
-  left: 25%;
-  transform: translate(-25%, -50%);
-
-  width: 90%;
-  height: 60%;
-} */
 
 .NoteAdder {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* width: 90vw; */
+ 
+ 
+ 
+ 
+ 
   height: 80vh;
   background-color: rgba(3, 12, 113, 0.8);
   color: #fff;
@@ -708,23 +627,7 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
-/* .notearea {
-  width: 40%;
-  height: 40%;
-  border: none;
-  outline: none;
-  resize: none;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-}
 
-.notearea:focus {
-  width: 80%;
-  height: 80%;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
 
 .modal {
   display: flex;
@@ -742,7 +645,7 @@ button:hover {
 
 .modal-content {
   margin-bottom: 20px;
-  /* height: 90%; */
+ 
 }
 
 .modal h2 {
@@ -806,7 +709,7 @@ button:hover {
 }
 
 .todocontainer {
-  /* width: 30vw; */
+ 
   min-width: 25vw;
   height: 40vh;
   border: 1px solid #fff200;
@@ -821,12 +724,12 @@ button:hover {
 
 @media (min-width: 768px) {
   .todocontainer {
-    /* width: calc(50% - 20px); */
+   
     width: 30vw;
     min-width: 25vw;
     height: 40vh;
 
-    /* scale: 1.5; */
+   
     transition: all 0.2s ease-in-out;
   }
   .notes-area {
@@ -868,7 +771,6 @@ button:hover {
 
 .calendarcontainer {
   width: 100%;
-  /* max-width: 400px; */
   margin: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -910,28 +812,13 @@ button:hover {
 }
 
 .notes-area {
-  /* width: 100%; */
+ 
   transition: all 0.2s ease-in-out;
   margin-top: 10vh;
   
 }
 
-/* @media (min-width: 768px) {
-  .notes-area {
-    width: 80vw;
-  }
-}
-@media (max-width < 768px) {
-  .notes-area {
-    width: 90vw;
-  }
-}
 
-@media (min-width: 1024px) {
-  .notes-area {
-    width: 80vw;
-  }
-} */
 
 .no-todos {
   display: flex;
@@ -942,26 +829,26 @@ button:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* .calendarcontainer button { */
-/* position: inherit; */
-/* background-color: darkblue; */
-/* border: none; */
-/* border-radius: 5px; */
-/* width: 20px; */
-/* padding: 5px; */
-/* margin: -10px; */
-/* margin-right: 0px; */
-/* cursor: pointer; */
-/* transition: all 0.2s ease-in-out; */
-/* background: none; */
-/* color: inherit; */
-/* border: none; */
-/* padding: 0; */
-/* font: inherit; */
-/* cursor: pointer; */
-/* outline: inherit; */
-/* border: inherit; */
-/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .calendarcontainer button:hover {
   background-color: #00008b;
@@ -973,13 +860,13 @@ button:hover {
 }
 
 .react-calendar__navigation button {
-  /* background-color: #fff; */
-  /* border: none; */
-  /* border-radius: 5px; */
-  /* width: 20px; */
-  /* padding: 5px; */
-  /* margin: -10px; */
-  /* margin-right: 0px; */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   display: inline-block;
   min-width: 44px;
   width: 18%;
@@ -989,7 +876,7 @@ button:hover {
   line-height: 44px;
   text-align: center;
   background: none;
-  /* color: inherit; */
+ 
   border: none;
   padding: 0;
   font: inherit;
@@ -1014,16 +901,16 @@ button:hover {
   background-color: inherit;
   border: inherit;
   border-radius: 5px;
-  /* width: 20px; */
-  /* padding: 5px; */
+ 
+ 
   display: inline;
-  /* margin: 1px; */
-  /* position: relative; */
-  /* margin-right: 0px; */
-  /* margin-left: 0px; */
-  /* margin-right: 0px; */
-  /* cursor: pointer; */
-  /* transition: all 0.2s ease-in-out; */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 }
 
 .react-calendar button:hover {
@@ -1031,7 +918,7 @@ button:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* change days text in react calendar */
+
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #998383;
   opacity: 0.5;
@@ -1054,13 +941,13 @@ button:hover {
   font-size: inherit;
   font-family: inherit;
   text-decoration: none;
-  /* remove the underline */
+ 
   text-align: center;
-  /* align the text to the center */
+ 
   margin: 10px 0 10px 0;
-  /* add some margin to the left and right */
+ 
   padding: 0;
-  /* remove padding */
+ 
   display: inline-block;
   cursor: default;
 }
@@ -1074,18 +961,11 @@ button:hover {
   height: 83%;
   overflow: auto;
   transform: translate(-50%, -80%);
-  /* transform: translate(3%, 5%); */
+ 
   transition: all 0.2s ease-in-out;
 }
 
-/* .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  transition: all 0.2s ease-in-out;
-} */
+
 
 .save-buttton {
   background-color: green;
@@ -1136,16 +1016,16 @@ button:hover {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  /* margin: 10px; */
-  /* cursor: pointer; */
+ 
+ 
   transition: all 0.2s ease-in-out;
   z-index: 11;
   box-shadow: none;
-  /* font-weight: 5000px; */
+ 
 }
 
 .note-card button {
-  /* display: fixed; */
+ 
   position: absolute;
   top: 25%;
   right: 10px;
@@ -1173,6 +1053,6 @@ button:hover {
   width: 90%;
   height: 80%;
   overflow: scroll;
-  /* transform: translate(3%, 5%); */
+ 
   transition: all 0.2s ease-in-out;
 }

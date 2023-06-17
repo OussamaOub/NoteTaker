@@ -14,7 +14,6 @@ export default function NotesLoader({
       {notes.map((note) => (
         <div
           className="note-card"
-          // key={note.noteId}
         >
           <div onClick={() => onNoteClick(note)}>
             <h1>{note.title}</h1>

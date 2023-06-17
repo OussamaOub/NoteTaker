@@ -1,12 +1,10 @@
 import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import {
-  addDoc,
   arrayUnion,
   collection,
   doc,
   getDoc,
-  getDocs,
   getFirestore,
   setDoc,
   updateDoc,
@@ -17,10 +15,8 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  updateProfile,
 } from "firebase/auth";
 import { getAuth } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 const firebaseConfig = {
   apiKey: process.env.React_App_API_KEY,
   authDomain: process.env.React_App_AUTH_DOMAIN,
@@ -95,7 +91,6 @@ export async function loginwithgoogle() {
 }
 
 export async function addnote(uid, note) {
-  // access users collection then uid then add notes to notesarray
   const channelsRef = collection(db, "users");
   const docRef = doc(channelsRef, uid.toString());
   await updateDoc(
@@ -154,9 +149,9 @@ export async function getTodos(uid) {
 export async function createTodo(uid) {
   const channelsRef = collection(db, "users");
   const docRef = doc(channelsRef, uid.toString());
-  // await setDoc(docRef, { ToDo: [], todocount: 0 });
+  
 
-  // set the doc to the already existing data and add the notes array to the doc
+  
   await setDoc(docRef, { ToDo: [], todocount: 0 }, { merge: true });
 }
 
@@ -167,7 +162,7 @@ export async function toggletodo(userUID, todoId) {
   const todos = await getTodos(userUID);
   const newTodos = todos.map((todo) => {
     if (todo.todoId === todoId) {
-      // Create a new object with the updated isDone property
+      
       return {
         ...todo,
         isDone: !todo.isDone,
@@ -204,16 +199,16 @@ export async function editnote(uid, noteId, newNote) {
   const index = notes.findIndex((note) => note.noteId === noteId);
   const newNotes = notes;
   newNotes[index] = newNote;
-  // console.log(counts);
-  // const newNotes = notes.map((note) => {
-  //   if (note.noteId === noteId) {
-  //     return {
-  //       note: newNote,
-  //     };
-  //   }
-  //   return note;
-  // });
-  // console.log(newNotes);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   await updateDoc(docRef, {
     notecount: counts.notescount,
     todocount: counts.todocount,
@@ -230,7 +225,7 @@ export async function getnotesandtodocount(uid) {
   if (counter) {
     const notescount = counter.notecount;
     const todocount = counter.todocount;
-    // console.log(notescount, todocount);
+    
     return { notescount, todocount };
   } else {
     await createnotes(uid);

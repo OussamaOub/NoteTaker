@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import Modal from "react-modal";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-Modal.setAppElement("#root"); // Set the app root element for accessibility
+Modal.setAppElement("#root"); 
 
 export default function NoteEditor({
   note,
   handleNoteEdited,
   isOpn,
-  onClose, // Add onClose prop to handle closing the modal
+  onClose, 
 }) {
   const [updatedNote, setUpdatedNote] = useState(note);
 
@@ -22,7 +22,7 @@ export default function NoteEditor({
       return;
     }
     handleNoteEdited(updatedNote);
-    onClose(); // Close the modal
+    onClose(); 
   };
 
   return (
@@ -31,7 +31,7 @@ export default function NoteEditor({
         isOpen={isOpn}
         className="modal"
         overlayClassName="modal-overlay"
-        onRequestClose={onClose} // Add onRequestClose prop to handle closing the modal
+        onRequestClose={onClose} 
       >
         <div className="modal-content">
           <h2>Edit Note</h2>

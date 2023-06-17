@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 export default function TodosLoader({
   todos,
-  handleAddTodo,
   handleToggleTodo,
   handleDeleteTodo,
 }) {
@@ -29,7 +28,6 @@ export default function TodosLoader({
             />
 
             <p>{todo.content}</p>
-            {/* delete button */}
             <button
               className="delete-button"
               onClick={() => {

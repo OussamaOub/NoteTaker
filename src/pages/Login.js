@@ -49,7 +49,6 @@ export default function Login() {
   const handleLogin = async () => {
     setLoading(true);
     const user = await loginwithemailandpassword(email, password);
-    // check if user is a string
     if (typeof user !== "string") {
       setUser(user);
       localStorage.setItem("user", JSON.stringify(user));
@@ -93,7 +92,6 @@ export default function Login() {
   };
 
   const emailtester = () => {
-    // check email format
     if (email.length > 0) {
       const emailformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailformat.test(email);
@@ -128,7 +126,6 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <button
-                // prevent default
                 onClick={(e) => {
                   e.preventDefault();
                   handleLogin();
@@ -213,7 +210,6 @@ export default function Login() {
                 required=""
               />
               <button
-                // prevent default
                 onClick={(e) => {
                   e.preventDefault();
                   handleSignup();
