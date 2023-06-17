@@ -162,6 +162,15 @@ export default function Welcome() {
         <FirstNote onAddNote={handleAddNote} />
       ) : (
         <div className="wrapper">
+                    <div className="notes-area">
+            <NotesLoader
+              notes={notes}
+              mode="short"
+              onNoteClick={handleNoteClick}
+              handleDeleteNote={handleDeleteNote}
+            />
+          </div>
+
           <div className="todocontainer">
             <div className="todoheader">
               <h2>ToDo</h2>
@@ -214,14 +223,6 @@ export default function Welcome() {
           </div>
           <div className="calendarcontainer">
             <Schedule />
-          </div>
-          <div className="notes-area">
-            <NotesLoader
-              notes={notes}
-              mode="short"
-              onNoteClick={handleNoteClick}
-              handleDeleteNote={handleDeleteNote}
-            />
           </div>
           <Plus
             onClick={() => {

@@ -503,7 +503,7 @@ button:hover {
   height: 80vh;
   display: flex;
   /* margin: 10px; */
-  margin-top: 10vh;
+  /* margin-top: 11vh; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -791,6 +791,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 100vw;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
 }
@@ -805,7 +806,7 @@ button:hover {
 }
 
 .todocontainer {
-  width: 30vw;
+  /* width: 30vw; */
   min-width: 25vw;
   height: 40vh;
   border: 1px solid #fff200;
@@ -820,8 +821,16 @@ button:hover {
 
 @media (min-width: 768px) {
   .todocontainer {
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px); */
+    width: 30vw;
+    min-width: 25vw;
+    height: 40vh;
+
+    /* scale: 1.5; */
     transition: all 0.2s ease-in-out;
+  }
+  .notes-area {
+    width: 90%;
   }
 }
 
@@ -844,7 +853,8 @@ button:hover {
 
 @media (min-width: 1075px) {
   .todocontainer {
-    width: 30vw;
+    width: 40vw;
+    height: 60vh;
     margin-right: 100px;
     transition: all 0.2s ease-in-out;
   }
@@ -852,7 +862,7 @@ button:hover {
 
 @media (max-width: 1075px) {
   .main {
-    width: 70vw;
+    width: 80vw;
   }
 }
 
@@ -882,7 +892,7 @@ button:hover {
     margin-top: 10%;
   }
   .main {
-    width: 80vw;
+    width: 90vw;
   }
 }
 
@@ -902,7 +912,8 @@ button:hover {
 .notes-area {
   /* width: 100%; */
   transition: all 0.2s ease-in-out;
-  margin: 10px;
+  margin-top: 10vh;
+  
 }
 
 /* @media (min-width: 768px) {
